@@ -1,18 +1,9 @@
-# coding: utf-8
-
-# Yahoo!天気 RSS取得
-# Author : Asamac
-# Version : 0.1.2
-# Date : 2016/5/15
-# Modified : 2016/5/20
-# Ruby Version : 2.2.4p230
-
 require "date"
 require "rss"
 
 class Weather
     def initialize(location_str, date_str)
-        url = "http://rss.weather.yahoo.co.jp/rss/days/"
+        url = "https://rss-weather.yahoo.co.jp/rss/days/"
         date = DateTime.now
         # 日付を設定
         case date_str
